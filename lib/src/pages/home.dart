@@ -5,16 +5,13 @@ import 'package:app_componentes/src/providers/menu_provider.dart';
 import 'package:app_componentes/src/utils/icono_strin_util.dart';
 
 class HomePage extends StatelessWidget {
-  final fontStyleW = new TextStyle(color: Colors.white, fontSize: 20.0);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Center(child: Text('Componentes')),
-        backgroundColor: Colors.black,
       ),
-      backgroundColor: Colors.grey,
       body: _lista(),
     );
   }
@@ -35,9 +32,9 @@ class HomePage extends StatelessWidget {
 
     data.forEach((opc){
       final widgetTemp = ListTile(
-        title: Text(opc['texto'], style: fontStyleW),
+        title: Text(opc['texto']),
         leading: getIcon(opc['icon']),
-        trailing: Icon(Icons.keyboard_arrow_right,color: Colors.black),
+        trailing: Icon(Icons.keyboard_arrow_right),
         onTap: (){
           Navigator.pushNamed(context, opc['ruta']);
         },

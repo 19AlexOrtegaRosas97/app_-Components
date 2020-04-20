@@ -1,19 +1,16 @@
 import 'package:flutter/material.dart';
 
 class HomePageTemp extends StatelessWidget {
-  final fontWhithe = new TextStyle(color: Colors.white);
   final opciones = ['One', 'Two', 'Three', 'Four', 'Five','Six','Seven','Eight','Nine','Ten','Eleven','Twelve','Thirteen','Fourteen'];
 
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
       appBar: AppBar(
         title: Center(
           child: Text('Componentes Temp'),
         ),
-        backgroundColor: Colors.black,
       ),
       body: ListView(
         //children: _crearItems(),
@@ -27,7 +24,7 @@ class HomePageTemp extends StatelessWidget {
 
     for (String opc in opciones) {
       final tmpWidget = ListTile(
-        title: Text(opc, style: fontWhithe),
+        title: Text(opc),
       );
 
       listaWidgets..add(tmpWidget)..add(Divider());
@@ -42,7 +39,7 @@ class HomePageTemp extends StatelessWidget {
       return Column(
         children: <Widget>[
           ListTile(
-            title: Text(item, style: fontWhithe),
+            title: Text(item),
             leading: Icon(Icons.computer),
             trailing: Icon(Icons.keyboard_arrow_right),
             onTap: (){},
