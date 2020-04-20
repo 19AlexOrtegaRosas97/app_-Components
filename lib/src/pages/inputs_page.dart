@@ -7,7 +7,7 @@ class InputPage extends StatefulWidget {
 
 class _InputPageState extends State<InputPage> {
 
-  String _nombre;
+  String _nombre = '';
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +30,7 @@ class _InputPageState extends State<InputPage> {
     return TextField(
       textCapitalization: TextCapitalization.sentences,
       decoration: InputDecoration(
-        counter: Text('Letras 0'),
+        counter: Text('Letras ${_nombre.length}'),
         hintText: 'Nombre de la persona',
         labelText: 'Nombre',
         helperText: 'Solo Nombre',
