@@ -19,7 +19,7 @@ class HomePageTemp extends StatelessWidget {
     );
   }
 
-  List<Widget> _crearItems() {
+  /*List<Widget> _crearItems() {
     List<Widget> listaWidgets = new List<Widget>();
 
     for (String opc in opciones) {
@@ -31,7 +31,7 @@ class HomePageTemp extends StatelessWidget {
     }
 
     return listaWidgets;
-  }
+  }*/
 
   List<Widget> _crearItemsCorta(){
 

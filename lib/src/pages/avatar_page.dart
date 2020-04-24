@@ -11,7 +11,7 @@ class AvatarPage extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(5.0),
             child: CircleAvatar(
-               backgroundImage: NetworkImage('https://cdn.eldeforma.com/wp-content/uploads/2019/09/jordi-nino-polla-2.jpg'),
+               backgroundImage: NetworkImage('https://avatars0.githubusercontent.com/u/35353333?s=460&u=58ff2f7d762d6a047bdfa0eee4142827a97debaf&v=4'),
                radius: 26.0,
             ),
           ),
